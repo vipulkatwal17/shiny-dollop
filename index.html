@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Glue Shopping Plaza</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- favicon icon -->
+  <link rel="shortcut icon" class="img-fluid rounded-circle" type="img/png" href="./CSS/IMAGES/favicon.png">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/2641d34cf4.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Josefin+Sans:700,|Niconne|Open+Sans|Pacifico|Roboto|Ubuntu&display=swap"
+`    rel="stylesheet">
+
+  <!-- CSS file-->
+  <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+
+<body data-spy="scroll" data-target="#navbarLinks">
+
+   <!-- loading screen spinner -->
+   <div class="preload">
+    <img class="airplane" src="./CSS/IMAGES/airplane.png" alt="">
+    <h3>Landing on the website...</h3>
+    <img class="cloud1" src="./CSS/IMAGES/cloud.png" alt="cloud1">
+    <img class="cloud2" src="./CSS/IMAGES/cloud.png" alt="cloud2">
+    <img class="cloud3" src="./CSS/IMAGES/cloud.png" alt="cloud2">
+  </div>
+  <!--end of loading screen spinner -->
+  <!-- navbar  -->
+  <nav class="navbar navbar-dark navbar-expand-md fixed-top">
+    <!-- logo -->
+    <a href="index.html" class="navbar-brand text-capitalize ">
+      <img src="./CSS/IMAGES/company-logo-1.png" class="img-fluid rounded-circle" alt="Company Logo">
+    </a>
+    <!-- end of logo  -->
+    <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarLinks">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarLinks">
+      <form class="form-inline my-2 my-lg-0">
+        <!-- search box -->
+        <div class="search-box">
+          <input type="text" name="" class="search-txt" type="search" placeholder="Type to search" aria-label="Search">
+          <a class="search-btn" href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+        <!-- end of search box -->
+      </form>
+      <ul class="navbar-nav ml-auto ">
+
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="men.html" class="nav-link" target="_blank">Men</a>
+        </li>
+        <li class="nav-item">
+          <a href="women.html" class="nav-link" target="_blank">Women</a>
+        </li>
+        <li class="nav-item">
+          <a href="kids.html" class="nav-link" target="_blank">Kids</a>
+        </li>
+        <li class="nav-item">
+          <a href="appliances.html" class="nav-link" target="_blank">Home-Appliances</a>
+        </li>
+      </ul>
+      <p class="px-2">
+        <!-- login section -->
+        <!-- Modal -->
+        <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+          aria-hidden="true">
+          <div class="modal-backdrop">
+            <div class="modal-dialog" role="document">
+              <!--Content-->
+              <div class="modal-content form-elegant">
+                <!--Header-->
+                <div class="modal-header text-center">
+                  <img src="./CSS/IMAGES/loginanime.jpg" class="img-fluid rounded-circle" alt="">
+                  <br>
+                  <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3 text-center" id="myModalLabel">
+                    <strong>Sign
+                      in</strong>
+                  </h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <!--Body-->
+                <div class="modal-body mx-4">
+                  <!--Body-->
+                  <div class="md-form mb-5">
+                    <input type="email" id="Form-email1" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
+                  </div>
+
+                  <div class="md-form pb-3">
+                    <input type="password" id="Form-pass1" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
+                    <p class="font-small blue-text d-flex justify-content-end">Forgot <a href="#"
+                        class="blue-text ml-1">
+                        Password?</a></p>
+                  </div>
+
+                  <div class="text-center mb-3">
+                    <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Sign in</button>
+                  </div>
+                  <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in
+                    with:</p>
+
+                  <div class="row my-3 d-flex justify-content-center">
+                    <!--Facebook-->
+                    <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i
+                        class="fab fa-facebook-f text-center"></i></button>
+                    <!--Twitter-->
+                    <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i
+                        class="fab fa-twitter"></i></button>
+                    <!--Google +-->
+                    <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i
+                        class="fab fa-google-plus-g"></i></button>
+                  </div>
+                </div>
+                <!--Footer-->
+                <div class="modal-footer mx-5 pt-3 mb-1">
+                  <p class="font-small grey-text d-flex justify-content-end">Not a member?
+                    <a href="signup.html" class="blue-text ml-1">
+                      Sign Up</a></p>
+                </div>
+              </div>
+              <!--Content-->
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <button type="button" data-dismiss="modal" class="btn btn-success btn-rounded d-block img-fluid rounded"
+          data-toggle="modal" data-target="#elegantModalForm"><i class="fa fa-user" aria-hidden="true"></i> Login
+        </button>
+      </p>
+      <!-- end of login section -->
+    </div>
+
+  </nav>
+
+  <!-- end of navbar -->
+
+
+  <!-- carousel section-->
+  <div id="example" class="carousel slide" data-ride="carousel" data-pause="hover" data-interval="3000">
+    <!-- indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#example" data-slide-to="0" class="active"></li>
+      <li data-target="#example" data-slide-to="1"></li>
+      <li data-target="#example" data-slide-to="2"></li>
+      <li data-target="#example" data-slide-to="3"></li>
+      <li data-target="#example" data-slide-to="4"></li>
+    </ol>
+
+    <!-- images -->
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active"><img src="./CSS/IMAGES/carousel-1.jpg" alt="item"
+          class="d-block img-fluid w-100 ">
+        <div class="carousel-caption d-none d-md-block text-center">
+          <h1 class="text-capitalize"><strong>Winter Sale:Flat 20% OFF on Jackets</strong></h1>
+        </div>
+      </div>
+
+      <div class="carousel-item"><img src="./CSS/IMAGES/carousel-2.jpg" alt="item" class="d-block img-fluid w-100">
+        <div class="carousel-caption d-none d-md-block text-center text-center">
+          <h1 class="text-capitalize"><strong> Sale:Flat 30% OFF on Sneakers</strong></h1>
+          <h2 class="text-capitalize">starts from: feb 6th-feb 12th</h2>
+        </div>
+      </div>
+
+      <div class="carousel-item"><img src="./CSS/IMAGES/carousel-3.jpg" alt="item" class="d-block img-fluid w-100">
+        <div class="carousel-caption d-none d-md-block text-center">
+          <h1 class="text-capitalize"><strong> Sale:Flat 10% OFF on cannon cameras</strong></h1>
+          <h2 class="text-capitalize">Hurry Up!</h2>
+        </div>
+      </div>
+
+      <div class="carousel-item"><img src="./CSS/IMAGES/carousel-4.jpg" alt="item" class=" d-block img-fluid w-100">
+        <div class="carousel-caption d-none d-md-block text-center">
+          <h1 class="text-capitalize"><strong> Sale:Flat 10% OFF on headphones</strong></h1>
+          <h2 class="text-capitalize">Hurry Up!</h2>
+        </div>
+      </div>
+
+      <div class="carousel-item"><img src="./CSS/IMAGES/carousel-5.jpg" alt="item" class="d-block img-fluid w-100">
+        <div class="carousel-caption d-none d-md-block text-center">
+          <h1 class="text-capitalize"><strong> Sale:Flat 10% OFF on smartphones</strong></h1>
+          <h2 class="text-capitalize">starts from: feb 6th-feb 12th</h2>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- end of the images -->
+
+    <!-- controls -->
+
+    <a href="#example" class="carousel-control-prev" data-slide="prev" role="button">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a href="#example" class="carousel-control-next" data-slide="next" role="button">
+      <span class=" carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+    <a href="#example" class="carousel-control-next" data-slide="next" role="button">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+    <a href="#example" class="carousel-control-next" data-slide="next" role="button">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+    <!-- end of control -->
+  </div>
+  <!--end of carousel section-->
+
+
+  <!-- trending section -->
+  <div id="trending" class="offset">
+    <div class="jumbotron container-fluid">
+      <!-- section-title -->
+      <h1 class="heading text-uppercase text-dark  text-center"> trending now
+      </h1>
+      <div class="heading-underline bg-success"></div>
+      <!-- end of the section-title -->
+      <div class="row padding">
+
+        <div class="col-sm-4 p-5">
+          <div class="product-grid">
+          <div class="trending">
+            <a href="./CSS/IMAGES/trending-1.jpg"><img src="./CSS/IMAGES/trending-1.jpg" class="img-fluid"
+                target="_blank" alt=""></a>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 p-5">
+          <div class="trending">
+            <a href="./CSS/IMAGES/trending-2.jpg"><img src="./CSS/IMAGES/trending-2.jpg" class="img-fluid"
+                target="_blank" alt=""></a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 p-5">
+          <div class="trending">
+            <a href="./CSS/IMAGES/trending-3.jpg"><img src="./CSS/IMAGES/trending-3.jpg" class="img-fluid"
+                target="_blank" alt=""></a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 p-5">
+          <div class="trending">
+            <a href="./CSS/IMAGES/trending-4.jpg"><img src="./CSS/IMAGES/trending-4.jpg" class="img-fluid"
+                target="_blank" alt=""></a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 p-5">
+          <div class="trending">
+            <a href="./CSS/IMAGES/trending-5.jpg"><img src="./CSS/IMAGES/trending-5.jpg" class="img-fluid"
+                target="_blank" alt=""></a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 p-5">
+          <div class="trending">
+            <a href="./CSS/IMAGES/trending-6.jpg"><img src="./CSS/IMAGES/trending-6.jpg" class="img-fluid"
+                target="_blank" alt=""></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- end of trending-section -->
+
+  <!-- top-picks section -->
+  <div id="course" class="offset container-fluid">
+    <!-- section-title -->
+    <div class="col-12 narrow text-center">
+      <h1 class="text-uppercase text-dark mb-0">
+        top-picks
+      </h1>
+      <div class="top-head title-underline bg-warning">
+      </div>
+    </div>
+    <!-- end of the section-title -->
+    <div class="row pick">
+      <div class=" narrow col-md-6 col-sm-4 col-lg-3 col-ld-3 text-center mt-3">
+        <div class="">
+          <a href="#" class="justify-content-center"> <img src="./CSS/IMAGES/dslr.jpeg"
+              class="img-fluid rounded bg-secondary" alt=""></a>
+          <h2 class="my-2  text-dark">DSLR Cameras</h2>
+          <p class="text-dark lead text-capitalize lead">including: sony, cannon, nikon, samsung and much
+            more.
+          </p>
+
+        </div>
+      </div>
+      <div class="narrow col-md-6 col-sm-4 col-lg-3 col-ld-3 text-center mt-3">
+        <div class="">
+          <a href="#" class="justify-content-center"> <img src="./CSS/IMAGES/nike-air-jordanmax.jpeg"
+              class="img-fluid rounded" alt=""></a>
+          <h2 class="my-2 text-dark">Sneakers</h2>
+          <p class="lead text-dark text-capitalize">including: nike, puma, adidas, woodland and much more.</p>
+        </div>
+      </div>
+      <div class="narrow col-md-6 col-sm-4 col-lg-3 col-ld-3 text-center mt-3">
+        <div class="">
+          <a href="#" class="justify-content-center"><img src="./CSS/IMAGES/hp-laptop-white.jpeg"
+              class="img-fluid rounded" alt=""></a>
+          <h2 class="my-2 text-dark">Laptops</h2>
+          <p class="lead text-dark text-capitalize"> including: HP, acer, alien-ware and much more.
+          </p>
+        </div>
+      </div>
+      <div class="narrow col-md-6 col-sm-4 col-lg-3 col-ld-3 text-center mt-3">
+        <div class="">
+          <a href="#" class="justify-content-center"><img src="./CSS/IMAGES/grey-couch.jpeg" class="img-fluid rounded"
+              alt=""></a>
+          <h2 class="my-2 text-dark">Sofas-Sets</h2>
+          <p class="lead text-dark text-capitalize"> including: wooden sofas, air sofas and much more.
+          </p>
+
+        </div>
+      </div>
+      <div class="narrow col-md-6 col-sm-4 col-lg-3 col-ld-3 text-center mt-3">
+        <div class="">
+          <a href="#" class="justify-content-center"><img src="./CSS/IMAGES/rolex-watch-time-luxury-364822.jpeg"
+              class="img-fluid rounded" alt=""></a>
+          <h2 class="my-2 text-dark">Watches</h2>
+          <p class="lead text-dark text-capitalize">including: Rado, fossil, Rolex and much more.
+          </p>
+
+        </div>
+      </div>
+      <div class="narrow col-md-6 col-sm-4 col-lg-3 col-ld-3 text-center mt-3">
+        <div class="">
+          <a href="#" class="justify-content-center"><img src="./CSS/IMAGES/beat-headphones.jpeg"
+              class="img-fluid rounded" alt=""></a>
+          <h2 class="my-2 text-dark">Headphones</h2>
+          <p class="lead text-dark text-capitalize"> including: beats, sony, bose and much more.
+          </p>
+        </div>
+      </div>
+      <div class="narrow col-md-6 col-sm-4 col-lg-3 col-ld-3 text-center mt-3 mx-auto">
+        <div class="">
+          <a href="#" class="justify-content-center"><img src="./CSS/IMAGES/black-xbox.jpeg" class="img-fluid rounded "
+              alt=""></a>
+          <h2 class="my-2 text-dark">Gaming-Consoles</h2>
+          <p class="lead text-dark text-capitalize"> including: Sony, xbox, nintendo and much more.
+          </p>
+        </div>
+      </div>
+      <div class="narrow col-md-6 col-sm-4 col-lg-3 col-ld-3 text-center mt-3 mx-auto">
+        <div class="">
+          <a href="#" class="justify-content-center"><img
+              src="./CSS/IMAGES/android-android-phone-cell-phone-cellphone-404280.jpg" class="img-fluid rounded "
+              alt=""></a>
+          <h2 class="my-2 text-dark">Smartphones</h2>
+          <p class="lead text-dark text-capitalize"> including: samsung, huwaei, redmi and much more.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- end of top-picks section -->
+
+  <!--new arrivals Section -->
+  <div class="container-fluid">
+    <!-- title -->
+    <div class="col-12 narrow text-center">
+      <h1 id="arrival" class=" text-uppercase text-dark mb-0">
+        new arrivals
+      </h1>
+      <div id="arrival-underline" class="arrivals-head title-underline bg-danger">
+      </div>
+    </div>
+    <!--end of title -->
+    <div class="row pt-5">
+      <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image">
+            <a href="#">
+              <img class="pic-1" src="./CSS/IMAGES/img-1.jpg">
+              <img class="pic-2" src="./CSS/IMAGES/img-2.jpg">
+            </a>
+            <span class="product-trend-label">New</span>
+            <span class="product-discount-label">-16%</span>
+            <ul class="social">
+              <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+              <li><a href="#" data-tip="Wishlist"><i class="fa fa-heart"></i></a></li>
+              <li><a href="#" data-tip="Compare"><i class="fa fa-random"></i></a></li>
+              <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+
+            </ul>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">Men's Blazer</a></h3>
+            <div class="price">$21.00</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image">
+            <a href="#">
+              <img class="pic-1" src="./CSS/IMAGES/img-3.jpg">
+              <img class="pic-2" src="./CSS/IMAGES/img-4.jpg">
+            </a>
+            <span class="product-trend-label">New</span>
+            <span class="product-discount-label">-9%</span>
+            <ul class="social">
+              <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+              <li><a href="#" data-tip="Wishlist"><i class="fa fa-heart"></i></a></li>
+              <li><a href="#" data-tip="Compare"><i class="fa fa-random"></i></a></li>
+              <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+            </ul>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">Women's Button Top</a></h3>
+            <div class="price discount"><span>$17.00</span> $13.60</div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image">
+            <a href="#">
+              <img class="pic-1" src="./CSS/IMAGES/img-5.jpg">
+              <img class="pic-2" src="./CSS/IMAGES/img-6.jpg">
+            </a>
+            <span class="product-trend-label">New</span>
+            <span class="product-discount-label">-16%</span>
+            <ul class="social">
+              <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+              <li><a href="#" data-tip="Wishlist"><i class="fa fa-heart"></i></a></li>
+              <li><a href="#" data-tip="Compare"><i class="fa fa-random"></i></a></li>
+              <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+            </ul>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">Women's Button Top</a></h3>
+            <div class="price discount"><span>$17.00</span> $13.60</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image">
+            <a href="#">
+              <img class="pic-1" src="./CSS/IMAGES/img-7.jpg">
+              <img class="pic-2" src="./CSS/IMAGES/img-8.jpg">
+            </a>
+            <span class="product-trend-label">New</span>
+            <span class="product-discount-label">-20%</span>
+            <ul class="social">
+              <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+              <li><a href="#" data-tip="Wishlist"><i class="fa fa-heart"></i></a></li>
+              <li><a href="#" data-tip="Compare"><i class="fa fa-random"></i></a></li>
+              <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+            </ul>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">Men's Shirt</a></h3>
+            <div class="price discount"><span>$17.00</span> $13.60</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End of new arrivals Section -->
+
+  <!-- Timeline section -->
+  <div class="order-timeline">
+    <div class="timeline-object complete">
+      <div class="timeline-status"></div>
+        <div class="timeline-p">
+          <h1>Order Placed</h1>
+          <span>05.05.2020 - 14.39</span>
+        </div>
+      </div>
+ 
+ <div class="timeline-object complete">
+  <div class="timeline-status"></div>
+  <div class="timeline-p">
+    <h1>Order in Process</h1>
+    <span>11.05.2020 - 14.39</span>
+  </div>
+ </div>
+ 
+ <div class="timeline-object complete">
+  <div class="timeline-status"></div>
+  <div class="timeline-p">
+    <h1>Order Complete</h1>
+  </div>
+ </div>   
+ </div>
+  <!-- end of Timeline section -->
+ 
+
+  <!--Add To cart section -->
+  <div class="container-fluid">
+    <!-- title -->
+    <div class="col-12 narrow text-center">
+      <h1 id="arrival" class=" text-uppercase text-dark mb-0">
+        Today's Hot Deal
+      </h1>
+      <div id="add-cart" class="top-head title-underline bg-danger">
+      </div>
+    </div>
+    <!--end of title -->
+    <div class="container mt-5 pb-5">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="CSS/IMAGES/black-shoes.jpeg" alt="show" class="card-img-top">
+            <div class="card-body">
+              <h5>Black Shoes</h5>
+              <h6>$55.00</h6>
+              <button class="btn btn-danger"><i class="fa fa-cart-plus" aria-hidden="true"> Add To Cart</i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="CSS/IMAGES/white-stan-smith.jpeg" alt="show" class="card-img-top">
+            <div class="card-body">
+              <h5>White Shoes</h5>
+              <h6>$30.00</h6>
+              <button class="btn btn-danger"><i class="fa fa-cart-plus" aria-hidden="true"> Add To Cart</i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="CSS/IMAGES/black-marshall-headphones.jpeg" alt="show" class="card-img-top">
+            <div class="card-body">
+              <h5>Headphones</h5>
+              <h6>$16.00</h6>
+              <button class="btn btn-danger"><i class="fa fa-cart-plus" aria-hidden="true"> Add To Cart</i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="CSS/IMAGES/woman-wearing-grey-denim.jpeg" alt="show" class="card-img-top">
+            <div class="card-body">
+              <h5>Denim</h5>
+              <h6>$55.00</h6>
+              <button class="btn btn-danger"><i class="fa fa-cart-plus" aria-hidden="true"> Add To Cart</i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of add to cart section-->
+
+  <!-- filler section -->
+
+  <section id="filler" class="p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto text-center">
+          <h1 class="text-danger">New Clothes Collection</h1>
+          <p class="lead text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores in nemo ipsa alias
+            saepe. Excepturi, temporibus reprehenderit? Architecto, quasi. Autem!</p>
+          <a href="#" class="btn btn btn-outline-primary btn-lg m-3 text-capitalize">buy now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of filler section -->
+  <!-- blog section -->
+
+<!-- review section -->
+<section id="review" class="py-5">
+  <div class="container">
+    <!-- section-title -->
+    <div class="row ">
+      <div class="col text-center">
+        <h1 class="display-4 text-uppercase text-dark mb-0">
+          <strong>review</strong>
+        </h1>
+        <div class="title-underline bg-danger"></div>
+      </div>
+    </div>
+    <!-- end of the section-title -->
+    <div class="row">
+      <div class="col-md-6 my-4"></div>
+      <img src="./CSS/IMAGES/review.jpg" class="m-2 img-fluid rounded-circle d-none d-md-block" alt="">
+      <div class="col-md-6 my-4"></div>
+      <blockquote class="blockquote text-right">
+        <p><i class="fas fa-quote-left fa-2x mr-3"></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          tempore nihil vel eaque ad cum error voluptas possimus velit asperiores?</p>
+        <footer class="blockquote-footer text-left text-danger"> <strong> Tupac Shakur</strong> </footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+<!-- end of review section -->
+
+ <!-- contact section -->
+ <section id="contact" class="py-5 bg-warning">
+  <div class="container">
+    <!-- section-title -->
+    <div class="row ">
+      <div class="col text-center">
+        <h1 class="display-4 text-uppercase text-dark mb-0">
+          <strong>contact</strong>
+        </h1>
+        <div class="title-underline bg-success"></div>
+      </div>
+    </div>
+    <!-- end of the section-title -->
+    <div class="row">
+      <div class="col-md-6 my-3">
+        <!-- title -->
+        <div class="card card-body bg-secondary">
+          <div class="card-title text-center text-white">
+            <h2 class="text-capitalize">new to glue</h2>
+            <p>New User Sign in</p>
+          </div>
+          <!-- end of title -->
+          <form>
+            <!-- single form -->
+            <div class="form-group mt-3">
+              <input type="text" class="form-control form-control-lg" id="name" placeholder="Your Name">
+            </div>
+            <!-- email -->
+            <div class="form-group mt-3">
+              <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <!-- phone -->
+            <div class="form-group mt-3">
+              <input type="tel" class="form-control" id="phone" placeholder="Phone">
+            </div>
+            <!-- input group -->
+            <div class="input-group my-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Username</span>
+              </div>
+              <input type="text" id="group-username" class="form-control">
+            </div>
+            <!-- font-awesome -->
+            <div class="input-group my-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-user"></i>
+                </span>
+              </div>
+              <input type="text" id="group-username" class="form-control" placeholder="username">
+              <!-- append -->
+              <div class="input-group-append">
+                <button type="button" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+            <button type="button" class="btn btn-outline-dark btn-block text-uppercase">Sign Up Here</button>
+          </form>
+        </div>
+      </div>
+      <!-- google maps -->
+      <div class="col-md-6 my-3"></div>
+      <div class="embed-responsive embed-responsive-4by3">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6813.18416831133!2d76.6369879250799!3d31.37023392567804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39053759915f298f%3A0x806475b44e61b02a!2sJhanduta%2C%20Himachal%20Pradesh%20174031%2C%20India!5e0!3m2!1sen!2sde!4v1591889169317!5m2!1sen!2sde" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></
+    </div>
+  </div>
+</section>
+<!-- end of contact section -->
+
+
+  <!--================================== footer section=============================================== -->
+  <div id="contact" class="offset">
+    <footer>
+      <div class="row justify-content-center">
+        <div class="col-md-5 text-center text-dark">
+          <img src="/CSS/IMAGES/footer-logo.png" class="mx-5" alt="">
+          <h4>Glue Plaza:</h4>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <br>
+          <p>Connect with Us on Social Media:</p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p>Contact Info:</p>
+          <p>Mobile No.- 8278892079 <span class="badge badge-pill">Contact Now</span>
+            <br>
+          </p>
+
+          <ul id="social">
+            <li>
+              <a href="https://www.facebook.com/vipukatwal17" target="_blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://twitter.com/vipulkatwal17" target="_blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://vipulkatwal17@gmail.com" target="_blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fab fa-google" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/vipul-katwal-97b590171/" target="_blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://instagram.com/vipulkatwal17" target="_blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="btn logout d-block mx-auto my-3" data-toggle="modal" data-target="#modal">Log
+            Out</button>
+        </div>
+        <hr class="socket">
+        <p>&copy; 2020 Glue Plaza Limited.All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </div>
+  <!-- modal -->
+  <div class="modal fade" id="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- modal header -->
+        <div class="modal-header">
+          <h3 class="modal-title">Sorry to see you leave.</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;
+          </button>
+        </div>
+        <!-- modal body -->
+        <div class="modal-body ">
+          <div class="p">We hope that see you soon.
+          </div>
+        </div>
+        <!-- modal footer -->
+        <div class="modal-footer ">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end of footer section -->
+<!--Loading spinner jQuery -->
+<script>
+  window.addEventListener("load", () => {
+    const preload = document.querySelector(".preload");
+    preload.classList.add("preload-finish");
+  });
+</script>
+<!--end of loading spinner jQuery -->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
